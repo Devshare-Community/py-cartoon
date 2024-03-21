@@ -158,3 +158,17 @@ class Cartoon:
 				t.fd(a)
 		t.end_fill()
 		turtle.tracer(True)
+
+	def kaan1(self, x, y):
+		t = self.t
+		self.meme(x, y)
+		t.fillcolor('#000000')
+		t.begin_fill()
+		t.seth(330)
+		t.circle(100, 35)
+		t.seth(219)
+		t.circle(-300, 19)
+		t.seth(110)
+		t.circle(-30, 50)
+		t.circle(-300, 10)
+		t.end_fill()
