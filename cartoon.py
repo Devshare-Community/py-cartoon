@@ -14,3 +14,8 @@ class Cartoon:
 		t.pensize(3)
 		t.speed(9)
 		t.ondrag(gajurel)
+
+	def meme(self, x, y):
+		self.t.penup()
+		self.t.goto(x, y)
+		self.t.pendown()
