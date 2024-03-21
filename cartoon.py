@@ -172,3 +172,17 @@ class Cartoon:
 		t.circle(-30, 50)
 		t.circle(-300, 10)
 		t.end_fill()
+
+	def kaan2(self, x, y):
+		t = self.t
+		self.meme(x, y)
+		t.fillcolor('#000000')
+		t.begin_fill()
+		t.seth(300)
+		t.circle(-100, 30)
+		t.seth(35)
+		t.circle(300, 15)
+		t.circle(30, 50)
+		t.seth(190)
+		t.circle(300, 17)
+		t.end_fill()
