@@ -505,3 +505,12 @@ class Cartoon:
 
 	def start(self):
 		self.jiu()
+
+
+def main():
+	print('Painting the Cartoon... ')
+	turtle.screensize(800, 600)
+	turtle.title('Cartoon')
+	cartoon = Cartoon()
+	cartoon.start()
+	turtle.mainloop()
