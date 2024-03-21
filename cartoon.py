@@ -138,3 +138,23 @@ class Cartoon:
 				t.fd(a)
 		t.end_fill()
 		turtle.tracer(True)
+
+	def gaala2(self, x, y):
+		t = self.t
+		turtle.tracer(False)
+		self.meme(x, y)
+		t.seth(60)
+		t.fillcolor('#DD4D28')
+		t.begin_fill()
+		a = 2.3
+		for i in range(120):
+			if 0 <= i < 30 or 60 <= i < 90:
+				a -= 0.05
+				t.lt(3)
+				t.fd(a)
+			else:
+				a += 0.05
+				t.lt(3)
+				t.fd(a)
+		t.end_fill()
+		turtle.tracer(True)
