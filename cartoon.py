@@ -61,3 +61,60 @@ class Cartoon:
 		t.begin_fill()
 		t.circle(10)
 		t.end_fill()
+
+	def mukh(self, x, y):
+		self.meme(x, y)
+		t = self.t
+
+		t.fillcolor('#88141D')
+		t.begin_fill()
+
+		l1 = []
+		l2 = []
+		t.seth(190)
+		a = 0.7
+		for i in range(28):
+			a += 0.1
+			t.right(3)
+			t.fd(a)
+			l1.append(t.position())
+
+		self.meme(x, y)
+
+		t.seth(10)
+		a = 0.7
+		for i in range(28):
+			a += 0.1
+			t.left(3)
+			t.fd(a)
+			l2.append(t.position())
+
+		t.seth(10)
+		t.circle(50, 15)
+		t.left(180)
+		t.circle(-50, 15)
+
+		t.circle(-50, 40)
+		t.seth(233)
+		t.circle(-50, 55)
+		t.left(180)
+		t.circle(50, 12.1)
+		t.end_fill()
+
+		self.meme(17, 54)
+		t.fillcolor('#DD716F')
+		t.begin_fill()
+		t.seth(145)
+		t.circle(40, 86)
+		t.penup()
+		for pos in reversed(l1[:20]):
+			t.goto(pos[0], pos[1] + 1.5)
+		for pos in l2[:20]:
+			t.goto(pos[0], pos[1] + 1.5)
+		t.pendown()
+		t.end_fill()
+
+		self.meme(-17, 94)
+		t.seth(8)
+		t.fd(4)
+		t.back(8)
