@@ -514,3 +514,7 @@ def main():
 	cartoon = Cartoon()
 	cartoon.start()
 	turtle.mainloop()
+
+
+if __name__ == '__main__':
+	main()
