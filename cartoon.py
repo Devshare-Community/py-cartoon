@@ -502,3 +502,6 @@ class Cartoon:
 		t.fd(15)
 		t.end_fill()
 		t.pencolor('#000000')
+
+	def start(self):
+		self.jiu()
