@@ -40,3 +40,24 @@ class Cartoon:
 		t.begin_fill()
 		t.circle(10)
 		t.end_fill()
+
+	def aankha2(self, x, y):
+		self.meme(x, y)
+		t = self.t
+		t.seth(0)
+		t.fillcolor('#333333')
+		t.begin_fill()
+		t.circle(22)
+		t.end_fill()
+
+		self.meme(x, y + 10)
+		t.fillcolor('#000000')
+		t.begin_fill()
+		t.circle(10)
+		t.end_fill()
+
+		self.meme(x - 6, y + 22)
+		t.fillcolor('#ffffff')
+		t.begin_fill()
+		t.circle(10)
+		t.end_fill()
